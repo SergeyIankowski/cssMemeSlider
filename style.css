@@ -6,13 +6,13 @@ body {
 .container {
     height: auto;
     width: 100%;
-    height: 40rem;
+    height: 55rem;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
 .slider {
-    height: 100%;
+    height: 40rem;
     width: 500%;
     position: absolute;
     top: 0;
@@ -22,6 +22,17 @@ body {
 
     transition: 0.4s ease-in;
 }
+.slider-text {
+    height: 10rem;
+    top: 45rem;
+}
+.meme-description {
+    color: white;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
 .image-box {
     width: 100%;
     height: 100%;
@@ -30,13 +41,15 @@ body {
     align-items: flex-start;
 }
 .meme-img {
-
     height: 100%;
-    object-fit:fill;
+    /* object-fit:fill; */
 }
 .navigator {
     height: 1.5rem;
     display: flex;
+    position: absolute;
+    top: 42rem;
+    right: 1rem;
 }
 .navigator .bar {
     
@@ -44,6 +57,7 @@ body {
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
+    border: 0.2rem solid black;
     height: 100%;
     margin-left: 1rem;
     cursor: pointer;
@@ -59,10 +73,6 @@ input[type="radio"]{
 .navigator .bar:active{
     background-color: green;
 }
-.navigator .bar:checked{
-    background-color: none;
-    border: 1px solid lightyellow;
-}
 #btn1:checked ~ .slider {
     margin-left: 0;
 }
@@ -77,4 +87,25 @@ input[type="radio"]{
 }
 #btn5:checked ~ .slider {
     margin-left: -400%;
+}
+
+#btn1:checked ~ .navigator #btn1-label {
+    background-color: transparent;
+    border: 2px solid lightyellow;
+}
+#btn2:checked ~ .navigator #btn2-label {
+    background-color: transparent;
+    border: 2px solid lightyellow;
+}
+#btn3:checked ~ .navigator #btn3-label {
+    background-color: transparent;
+    border: 2px solid lightyellow;
+}
+#btn4:checked ~ .navigator #btn4-label {
+    background-color: transparent;
+    border: 2px solid lightyellow;
+}
+#btn5:checked ~ .navigator #btn5-label {
+    background-color: transparent;
+    border: 2px solid lightyellow;
 }

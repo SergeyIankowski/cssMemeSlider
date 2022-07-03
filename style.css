@@ -10,14 +10,13 @@ body {
     height: 55rem;
     overflow: hidden;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .slider {
     height: 40rem;
     width: 500%;
-    position: absolute;
-    top: 0;
 
     display: flex;
     align-items: center;
@@ -27,7 +26,6 @@ body {
 
 .slider-text {
     height: 10rem;
-    top: 45rem;
 }
 
 .meme-description {
@@ -48,15 +46,13 @@ body {
 
 .meme-img {
     height: 100%;
-    /* object-fit:fill; */
 }
 
 .navigator {
     height: 1.5rem;
     display: flex;
-    position: absolute;
-    top: 42rem;
     right: 1rem;
+    align-self: center;
 }
 
 .navigator .bar {
@@ -140,13 +136,9 @@ input[type="radio"] {
 
     .slider-text {
         height: 5rem;
-        top: 33rem;
     }
     .meme-description {
         font-size: 3rem;
-    }
-    .navigator {
-        top: 31rem
     }
 
     .navigator .bar {
@@ -168,13 +160,9 @@ input[type="radio"] {
 
     .slider-text {
         height: 3rem;
-        top: 22.5rem;
     }
     .meme-description {
         font-size: 2rem;
-    }
-    .navigator {
-        top: 21rem
     }
 
     .navigator .bar {
@@ -193,13 +181,9 @@ input[type="radio"] {
 
     .slider-text {
         height: 3rem;
-        top: 14rem;
     }
     .meme-description {
         font-size: 2rem;
-    }
-    .navigator {
-        top: 13rem
     }
 
     .navigator .bar {
@@ -213,10 +197,6 @@ input[type="radio"] {
     }
     .slider-text {
         height: 3rem;
-        top: 11.5rem;
-    }
-    .navigator {
-        top: 10.5rem
     }
     .navigator .bar {
         height: 0.5rem;

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 50%;
+    width: 100%;
+}
+.navigator {
+    height: 50px;
+    /* width: 600px; */
+    display: flex;
+    
+}
+.navigator .bar {
+    background-color: red;
+    width: 50px;
+    border-radius: 50%;
+    height: 100%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    /* visibility: hidden; */
+}

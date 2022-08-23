@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: black;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .container {
@@ -46,7 +46,7 @@ body {
 }
 
 .meme-img {
-    height: 100%;
+    height: 95%;
 }
 
 .navigator {
@@ -138,6 +138,7 @@ input[type="radio"] {
     .slider-text {
         height: 5rem;
     }
+
     .meme-description {
         font-size: 3rem;
     }
@@ -147,10 +148,12 @@ input[type="radio"] {
         width: 1rem;
     }
 }
+
 @media (max-width: 900px) {
     body {
         padding-top: 1rem;
     }
+
     .container {
         height: 35rem;
     }
@@ -162,6 +165,7 @@ input[type="radio"] {
     .slider-text {
         height: 3rem;
     }
+
     .meme-description {
         font-size: 2rem;
     }
@@ -171,6 +175,7 @@ input[type="radio"] {
         width: 1rem;
     }
 }
+
 @media (max-width: 600px) {
     .container {
         height: 25rem;
@@ -183,6 +188,7 @@ input[type="radio"] {
     .slider-text {
         height: 3rem;
     }
+
     .meme-description {
         font-size: 2rem;
     }
@@ -192,13 +198,16 @@ input[type="radio"] {
         width: 1rem;
     }
 }
+
 @media (max-width: 360px) {
     .slider {
         height: 10rem;
     }
+
     .slider-text {
         height: 3rem;
     }
+
     .navigator .bar {
         height: 0.5rem;
         width: 0.5rem;

@@ -1,3 +1,5 @@
-## A simple CSS Meme Slider created without JavaScript
+# CSS Meme Slider
 
-Deploy: <https://sergeyiankowski.github.io/cssMemeSlider/>
+Slider created without JavaScript using only HTML and CSS
+
+[Deploy](<https://sergeyiankowski.github.io/cssMemeSlider/>)

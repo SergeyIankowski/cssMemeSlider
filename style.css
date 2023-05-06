@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: black;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .container {
@@ -10,14 +10,14 @@ body {
     height: 55rem;
     overflow: hidden;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .slider {
     height: 40rem;
     width: 500%;
-    position: absolute;
-    top: 0;
 
     display: flex;
     align-items: center;
@@ -27,7 +27,6 @@ body {
 
 .slider-text {
     height: 10rem;
-    top: 45rem;
 }
 
 .meme-description {
@@ -47,16 +46,14 @@ body {
 }
 
 .meme-img {
-    height: 100%;
-    /* object-fit:fill; */
+    height: 95%;
 }
 
 .navigator {
     height: 1.5rem;
     display: flex;
-    position: absolute;
-    top: 42rem;
     right: 1rem;
+    align-self: center;
 }
 
 .navigator .bar {
@@ -140,13 +137,10 @@ input[type="radio"] {
 
     .slider-text {
         height: 5rem;
-        top: 33rem;
     }
+
     .meme-description {
         font-size: 3rem;
-    }
-    .navigator {
-        top: 31rem
     }
 
     .navigator .bar {
@@ -154,10 +148,12 @@ input[type="radio"] {
         width: 1rem;
     }
 }
+
 @media (max-width: 900px) {
     body {
         padding-top: 1rem;
     }
+
     .container {
         height: 35rem;
     }
@@ -168,13 +164,10 @@ input[type="radio"] {
 
     .slider-text {
         height: 3rem;
-        top: 22.5rem;
     }
+
     .meme-description {
         font-size: 2rem;
-    }
-    .navigator {
-        top: 21rem
     }
 
     .navigator .bar {
@@ -182,6 +175,7 @@ input[type="radio"] {
         width: 1rem;
     }
 }
+
 @media (max-width: 600px) {
     .container {
         height: 25rem;
@@ -193,13 +187,10 @@ input[type="radio"] {
 
     .slider-text {
         height: 3rem;
-        top: 14rem;
     }
+
     .meme-description {
-        font-size: 2rem;
-    }
-    .navigator {
-        top: 13rem
+        font-size: 1.5rem;
     }
 
     .navigator .bar {
@@ -207,17 +198,16 @@ input[type="radio"] {
         width: 1rem;
     }
 }
+
 @media (max-width: 360px) {
     .slider {
         height: 10rem;
     }
+
     .slider-text {
         height: 3rem;
-        top: 11.5rem;
     }
-    .navigator {
-        top: 10.5rem
-    }
+
     .navigator .bar {
         height: 0.5rem;
         width: 0.5rem;
